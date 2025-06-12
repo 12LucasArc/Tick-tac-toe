@@ -1,8 +1,14 @@
+import Router from "./Router";
+import { GlobalStyles } from "./Styles/Global.styled";
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from "./Styles/theme"
+
 function App() {
   return (
-    <div>
-      Tick Tac Toe
-    </div>
+    <ThemeProvider theme={lightTheme}>
+      <GlobalStyles />
+      <Router />
+    </ThemeProvider>
   );
 }
 
