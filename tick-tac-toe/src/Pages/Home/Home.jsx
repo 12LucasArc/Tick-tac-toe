@@ -1,13 +1,18 @@
 import React from 'react'
 import { Container } from "./Home.styled";
 import { Title, Subtitle } from "../../Styles/General.styled";
+import Button from '../../Components/Button/Button';
+import { useNavigate } from 'react-router-dom';
 
 
 function Home() {
+    const navigate = useNavigate();
+
   return (
     <Container>
-      <Title>Tic Tac Toe</Title>
+      <Title>TicTacToe</Title>
       <Subtitle>Play with your friends, Highest Score Wins!</Subtitle>
+      <Button onClick= {() => navigate("/game")}>Play Now</Button>
     </Container>
   )
 }

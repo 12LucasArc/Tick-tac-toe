@@ -10,7 +10,6 @@ export const Title = styled.h1`
 export const Subtitle = styled.h2`
     color: ${(props) => props.theme.colors.text};
     font-size: 1.5rem;
-    font-family: 'Pacifico', sans-serif;
     background-color: transparent;
     font-weight: 200;
     background-color: transparent;
