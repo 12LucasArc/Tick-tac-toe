@@ -1,15 +1,15 @@
 import React from 'react'
 import { Container } from "./Home.styled";
-import { Title } from "../../Styles/General.styled";
+import { Title, Subtitle } from "../../Styles/General.styled";
 import Header from '../../Components/Header/Header';
+
 
 function Home() {
   return (
     <Container>
-      <Title>
-        <Header />
-        Tic Tac Toe
-      </Title>
+      <Header />
+      <Title>Tic Tac Toe</Title>
+      <Subtitle>Play with your friends, Highest Score Wins!</Subtitle>
     </Container>
   )
 }
