@@ -8,4 +8,6 @@ export const Container = styled.div`
   height: 80vh;
   width: 100vw;
   background-color: ${(props) => props.theme.colors.primary};
+  padding: 0 2rem;
+  text-align: center;
 `;
