@@ -12,7 +12,7 @@ function Router() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/details" element={<Details />} />
-            <Route path="/game-on" element={<Game />} />
+            <Route path="/game" element={<Game />} />
         </Routes>
     </BrowserRouter>
   )
