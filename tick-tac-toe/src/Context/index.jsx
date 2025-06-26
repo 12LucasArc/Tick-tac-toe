@@ -1,10 +1,13 @@
 import React from 'react'
-import { ThemeContextProvider} from '../Context/ThemeContext.jsx';
+import { ThemeContextProvider} from './ThemeContext.jsx';
+import { GameContextProvider } from './GameContext.jsx';
 
 function Provider({children}) {
   return (
     <ThemeContextProvider>
+      <GameContextProvider>
         {children}
+      </GameContextProvider>
     </ThemeContextProvider>
   )
 }

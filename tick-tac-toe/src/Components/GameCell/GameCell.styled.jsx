@@ -1,10 +1,17 @@
 import styled from "styled-components";
 
 export const CellStyle = styled.button`
-  background-color: yellow;
+  background-color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.primary};
+  font-size: 3rem;
   width: 10rem;
   height: 10rem;
-  border: 1px solid #ccc;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 10px ${(props) => props.theme.colors.purple};
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2rem;
   cursor: pointer;
 `;

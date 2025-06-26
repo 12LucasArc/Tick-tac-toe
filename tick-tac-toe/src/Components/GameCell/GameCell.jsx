@@ -1,10 +1,26 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { CellStyle } from './GameCell.styled';
+import { GameContext}  from '../../Context/GameContext';
+import { checkForWinner } from '../../Utils/Index';
 
+function GameCell({ cellItem, index }) {
+  const { updateBoard, game } = useContext(GameContext);
 
-function GameCell() {
+  const cellClickHandler = () => {
+    updateBoard(index)
+    checkForWinner(game.board)
+    
+    // if(result) {
+      
+    // }
+    
+  }
   return (
-    <CellStyle>X</CellStyle>
+    <CellStyle 
+    onClick={cellClickHandler}
+      > 
+        {cellItem}
+    </CellStyle>
   )
 }
 
